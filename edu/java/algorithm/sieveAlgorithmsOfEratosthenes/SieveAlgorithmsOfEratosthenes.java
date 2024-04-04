@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 public class SieveAlgorithmsOfEratosthenes
 {
-    private int startNumber = 0;
-    private int endNumber = 0;
-    private boolean[] sieve = new boolean[endNumber];
-    private ArrayList<Integer> primes = new ArrayList<Integer>();
+    private int endNumber;
+    private ArrayList<Integer> primes = new ArrayList<>();
 
     public SieveAlgorithmsOfEratosthenes(int endNumber)
     {
@@ -16,6 +14,7 @@ public class SieveAlgorithmsOfEratosthenes
 
     public ArrayList<Integer> execute()
     {
+        boolean[] sieve = new boolean[endNumber];
         sieve[0] = true;
         sieve[1] = true;
 
@@ -34,19 +33,9 @@ public class SieveAlgorithmsOfEratosthenes
         return primes;
     }
 
-    public int getStartNumber()
-    {
-        return startNumber;
-    }
-
     public int getEndNumber()
     {
         return endNumber;
-    }
-
-    public boolean[] getSieve()
-    {
-        return sieve;
     }
 
     public ArrayList<Integer> getPrimes()

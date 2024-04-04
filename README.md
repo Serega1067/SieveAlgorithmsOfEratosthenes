@@ -1,4 +1,7 @@
 # Implementation of the sieve algorithm of Eratosthenes.
+## Task.
+The number n (n > 1) is given. Print a string consisting 
+of prime numbers less than n. Use the sieve of Eratosthenes.
 ## Block diagram.
 ```mermaid
 flowchart TB
@@ -17,3 +20,4 @@ flowchart TB
     D-->F-->G-->F
     F-->C
 ```
+
